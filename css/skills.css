@@ -1,0 +1,167 @@
+body {
+  background-image: url(/image/skills.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+html,body {
+  height: 80%;
+  margin: 0;
+}
+.font {
+  font-family: 'PT Serif', serif;
+  margin-left: 3em;
+  margin-top:1em;
+  /* color: #E9967A; */
+  color:  #669999;
+  
+}
+.p {
+  margin-top: 2.5em;
+}
+.font {
+  font-size: 20px;
+  font-family: 'PT Serif', serif;
+  color: #888844;
+  
+}
+#border{
+  background-color:#B0E0E6;
+  margin-top: 13em;
+}
+#nav a:hover {
+      background-color:#F5F5F5;
+}
+/* .font{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left:0%;
+      width: 40%;
+    }
+  }
+  .font {
+        display: inline-block;
+        position: relative;
+        color:#ffc381;
+      }
+
+      .font:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color:#fdc180;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .font:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      .about-font {
+        font-family: 'PT Serif', serif;
+        color:#B8860B;
+        margin-top: em;
+      }
+      .wwl  {
+        text-decoration:none;
+      color:#fdc180;
+      }
+      #nav {
+   
+        margin-top: 50px;
+        overflow: hidden;
+    } */
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto:500,700');
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', serif;
+      -webkit-font-smoothing: antialiased;
+         -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #dedede;
+    }
+    
+    h1 {
+      position: relative;
+      display: block;
+      margin: 0;
+      font-size: 4rem;
+      line-height: 1;
+      transform: translateY(6rem);
+      animation: up 500ms linear forwards;
+      z-index: 1;
+      text-shadow: 0px 1px 1px rgba(255,255,255,1);
+      
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0px;
+        height: 1px;
+        left: 0;
+        background-color: rgba(0,0,0,0.2);
+        z-index: -1;
+      }
+      
+      &::before {
+        top: 1.4rem;
+        animation: draw 500ms linear 1s forwards;
+      }
+      
+      &::after {
+        bottom: 0.4rem;
+        animation: draw 500ms linear 1s forwards;
+      }
+      
+    }
+    
+    .title-container {
+      font-size: 0;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 0.4rem;
+    }
+    
+    @keyframes up {
+      
+      100% {
+        transform: translateY(0);
+      }
+      
+    }
+    
+    @keyframes draw {
+      
+      100% {
+        width: 100%;
+      }
+      
+    }

@@ -1,0 +1,78 @@
+body {
+    background-image: url(/image/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.webp);
+     /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+.font {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 1em;
+}
+.font{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left:0%;
+      width: 40%;
+    }
+  }
+  .font {
+        display: inline-block;
+        position: relative;
+        color:#ffc381;
+      }
+
+      .font:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color:#fdc180;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      .font:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      .about-font {
+        font-family: 'PT Serif', serif;
+        color:#B8860B;
+        margin-top: em;
+      }
+      .wwl  {
+        text-decoration:none;
+      color:#fdc180;
+      }
+      #nav {
+   
+        margin-top: 50px;
+        overflow: hidden;
+    }
+    #border{
+      background-color:#B0E0E6;
+  }
+  #nav a:hover {
+          background-color:#F5F5F5;
+  }
